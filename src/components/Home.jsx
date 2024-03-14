@@ -1,5 +1,5 @@
 import Logo from '../images/logo.png';
-
+import {Link} from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -10,12 +10,12 @@ const Home = () => {
                     <h3>Sou desenvolvedor Full Stack</h3>
                 </div>
                 <div>
-                    <img className='sLogo' src={Logo} alt='Logo' />
+                    <img className='sLogo' src={Logo} alt='Logo'/>
                 </div>
             </div>
             <div className='menu'>
-                <a>Sobre Mim</a>
-                <a>Meus Projetos</a>
+                <Link to="/sobremim">Sobre Mim</Link>
+                <Link to="/meusprojetos">Meus Projetos</Link>
             </div>
         </>
     )
